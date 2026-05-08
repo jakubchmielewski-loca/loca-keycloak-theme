@@ -11,7 +11,7 @@
 
 // @ts-nocheck
 
-import logoSvgUrl from "../assets/logo.svg";
+import logoSvgUrl from "../../assets/logo.png";
 import { KeycloakMasthead, label, useEnvironment } from "../../shared/keycloak-ui-shared";
 import { Button } from "../../shared/@patternfly/react-core";
 import { ExternalLinkSquareAltIcon } from "../../shared/@patternfly/react-icons";
