@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Outfit:wght@100..900&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+    height: 100% !important;
+}
+
+#kc-header-wrapper,
+#kc-locale {
+    display: none !important;
+}
+
+.kcBodyClass {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(130deg, #00D4E3, #00A0E3 50%) !important;
+    font-family: "Outfit", sans-serif;
+    color: #242321;
+    padding: 24px 0 !important;
+    height: 100% !important;
+}
+
+#kc-page-title {
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+}
+
+.kcLoginClass {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 60px 80px 80px;
+    border-radius: 16px;
+    width: max(100%, 570px);
+    max-height: calc(100vh - 48px);
+    overflow-y: auto;
+}
+
+.kcButtonClass,
+button[type="submit"] {
+  cursor: pointer;
+  outline: none;
+  padding: 15px 39px;
+  background-color: #01a0e2 !important;
+  border-radius: 4px;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 600;
+  font-family: inherit;
+  border: solid #01a0e2 1px;
+  transition: all 0.3s ease;
+}
+
+#kc-header {
+    width: 180px;    
+    min-width: 180px;
+    height: 36px;
+    min-height: 36px;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url("../assets/logo.png");
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+.kcFormCardClass {
+    padding: 0 !important;
+    border: 0;
+    box-shadow: none !important;
+    background: none !important;
+}
+
+.kcFormClass {
+    padding: 0 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    background: none !important;
+}
+
+#kc-page-title {   
+    margin: 0 0 16px;
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.pf-c-form__label {
+    display: inline-block;
+    margin-bottom: 6px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.pf-c-form-control {
+    border: 1px solid #dee8ef;
+}
+
+#kc-info {
+    width: calc(100% + 160px);
+    margin: 28px -80px -80px;
+}
+
+.kcFormCardClass {
+    margin: 0;
+}
