@@ -11,7 +11,7 @@
  * This scrip is ran before this to avoid white flashes
  */
 
-import { getKcContext } from "./KcContext";
+// import { getKcContext } from "./KcContext";
 
 const DARK_THEME_CLASS = "pf-v5-theme-dark";
 
@@ -47,6 +47,11 @@ function setIsDarkModeEnabled(isDarkModeEnabled: boolean) {
 }
 
 export function startColorSchemeManagement() {
+    setIsDarkModeEnabled(false);
+}
+
+/* 
+export function startColorSchemeManagement() {
     const { kcContext } = getKcContext();
 
     // The "Dark Mode" realm configuration has been set to false
@@ -54,13 +59,10 @@ export function startColorSchemeManagement() {
     // This means that the admin don't want the UI to be render in dark mode
     // even when it's the user preference.
 
-    // if (kcContext.darkMode === false) {
-    //     setIsDarkModeEnabled(false);
-    //     return;
-    // }
-
-    setIsDarkModeEnabled(false);
-    return;
+    if (kcContext.darkMode === false) {
+        setIsDarkModeEnabled(false);
+        return;
+    }
 
     const mediaQuery_isDarkThePreferredColorScheme = window.matchMedia(
         "(prefers-color-scheme: dark)"
@@ -72,3 +74,4 @@ export function startColorSchemeManagement() {
         setIsDarkModeEnabled(event.matches)
     );
 }
+*/
