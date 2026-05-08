@@ -1,6 +1,7 @@
 # This file is managed by Keycloakify, do not edit it manually.
 
 # === Owned files start ===
+# account/colorScheme.ts
 # account/root/header.module.css
 # account/root/Header.tsx
 # account/root/PageNav.tsx
@@ -78,7 +79,6 @@
 
 # === @keycloakify/keycloak-account-ui v260601.0.0 ===
 /account/api.ts
-/account/colorScheme.ts
 /account/environment.ts
 /account/i18n-type.ts
 /account/i18next.d.ts
