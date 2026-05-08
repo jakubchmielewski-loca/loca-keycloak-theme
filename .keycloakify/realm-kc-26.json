@@ -1448,6 +1448,7 @@
                     "consentRequired": false,
                     "config": {
                         "introspection.token.claim": "true",
+                        "userinfo.token.claim": "true",
                         "id.token.claim": "true",
                         "access.token.claim": "true",
                         "claim.name": "clientAddress",
@@ -1463,6 +1464,7 @@
                     "consentRequired": false,
                     "config": {
                         "introspection.token.claim": "true",
+                        "userinfo.token.claim": "true",
                         "id.token.claim": "true",
                         "access.token.claim": "true",
                         "claim.name": "clientHost",
@@ -1478,6 +1480,7 @@
                     "consentRequired": false,
                     "config": {
                         "introspection.token.claim": "true",
+                        "userinfo.token.claim": "true",
                         "id.token.claim": "true",
                         "access.token.claim": "true",
                         "claim.name": "client_id",
@@ -1714,14 +1717,14 @@
                 "subComponents": {},
                 "config": {
                     "allowed-protocol-mapper-types": [
-                        "saml-role-list-mapper",
-                        "oidc-address-mapper",
-                        "saml-user-property-mapper",
                         "oidc-full-name-mapper",
-                        "oidc-usermodel-property-mapper",
+                        "oidc-address-mapper",
                         "saml-user-attribute-mapper",
+                        "saml-user-property-mapper",
+                        "oidc-sha256-pairwise-sub-mapper",
+                        "saml-role-list-mapper",
                         "oidc-usermodel-attribute-mapper",
-                        "oidc-sha256-pairwise-sub-mapper"
+                        "oidc-usermodel-property-mapper"
                     ]
                 }
             },
@@ -1751,14 +1754,14 @@
                 "subComponents": {},
                 "config": {
                     "allowed-protocol-mapper-types": [
-                        "saml-user-property-mapper",
                         "oidc-sha256-pairwise-sub-mapper",
-                        "oidc-address-mapper",
-                        "oidc-usermodel-property-mapper",
-                        "oidc-usermodel-attribute-mapper",
-                        "saml-role-list-mapper",
                         "oidc-full-name-mapper",
-                        "saml-user-attribute-mapper"
+                        "saml-user-attribute-mapper",
+                        "oidc-address-mapper",
+                        "saml-role-list-mapper",
+                        "oidc-usermodel-attribute-mapper",
+                        "oidc-usermodel-property-mapper",
+                        "saml-user-property-mapper"
                     ]
                 }
             },
@@ -1864,8 +1867,8 @@
         ]
     },
     "internationalizationEnabled": true,
-    "supportedLocales": ["en", "fr", "es"],
-    "defaultLocale": "en",
+    "supportedLocales": ["pl"],
+    "defaultLocale": "pl",
     "authenticationFlows": [
         {
             "id": "0e1abbbe-40e3-4754-9fe2-8a7d1f82354e",

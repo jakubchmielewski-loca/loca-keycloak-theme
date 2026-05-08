@@ -67,6 +67,12 @@ export const PageNav = () => {
                                         ? context.environment.features[menuItem.isVisible]
                                         : true
                                 )
+                                ?.filter(
+                                    menuItem =>
+                                        !["applications", "groups"].includes(
+                                            menuItem.label
+                                        )
+                                )
                                 .map(menuItem => (
                                     <NavMenuItem
                                         key={menuItem.label as string}
