@@ -53,10 +53,14 @@ export function startColorSchemeManagement() {
     // (Admin Console -> Realm Setting -> Themes -> Dark Mode)
     // This means that the admin don't want the UI to be render in dark mode
     // even when it's the user preference.
-    if (kcContext.darkMode === false) {
-        setIsDarkModeEnabled(false);
-        return;
-    }
+
+    // if (kcContext.darkMode === false) {
+    //     setIsDarkModeEnabled(false);
+    //     return;
+    // }
+
+    setIsDarkModeEnabled(false);
+    return;
 
     const mediaQuery_isDarkThePreferredColorScheme = window.matchMedia(
         "(prefers-color-scheme: dark)"
