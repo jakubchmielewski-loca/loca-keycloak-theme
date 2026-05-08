@@ -3,6 +3,7 @@
 # === Owned files start ===
 # account/root/header.module.css
 # account/root/Header.tsx
+# account/root/PageNav.tsx
 # === Owned files end =====
 
 # === @keycloakify/keycloak-ui-shared v260601.0.0 ===
@@ -154,7 +155,6 @@
 /account/resources/ResourceToolbar.tsx
 /account/resources/SharedWith.tsx
 /account/resources/ShareTheResource.tsx
-/account/root/PageNav.tsx
 /account/root/Root.tsx
 /account/utils/formatDate.ts
 /account/utils/joinPath.ts
