@@ -35,9 +35,10 @@ html, body {
     display: flex;
     flex-direction: column;
     background: white;
-    padding: 60px 80px 80px;
+    padding: 40px;
     border-radius: 16px;
-    width: max(100%, 570px);
+    width: 570px;
+    max-width: 90vw;
     max-height: calc(100vh - 48px);
     overflow-y: auto;
 }
@@ -112,4 +113,10 @@ button[type="submit"] {
 
 .kcFormCardClass {
     margin: 0;
+}
+
+@media (min-width: 768px) {
+    .kcLoginClass {
+        padding: 60px 80px 80px;
+    }
 }
