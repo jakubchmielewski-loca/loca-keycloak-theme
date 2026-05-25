@@ -6,10 +6,19 @@ import type { ThemeName } from "../kc.gen";
 const { useI18n, ofTypeI18n } = i18nBuilder
     .withThemeName<ThemeName>()
     .withCustomTranslations({
+        en: {
+            doLogout: "Log out",
+            logoutConfirmHeader: "Are you sure you want to log out?",
+            logoutConfirmTitle: "Logging out",
+            resendCode: "Resend code",
+            emailOtpForm: "Please enter the {0}-digit code sent to your email."
+        },
         pl: {
             doLogout: "Wyloguj się",
             logoutConfirmHeader: "Czy na pewno chcesz się wylogować?",
-            logoutConfirmTitle: "Wylogowywanie"
+            logoutConfirmTitle: "Wylogowywanie",
+            resendCode: "Wyślij kod ponownie",
+            emailOtpForm: "Wpisz {0}-cyfrowy kod, który wysłaliśmy na Twój adres e-mail."
         }
     })
     .build();

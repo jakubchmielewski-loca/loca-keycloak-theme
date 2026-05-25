@@ -9,6 +9,12 @@ export type KcContextExtension = {
     // See: https://docs.keycloakify.dev/faq-and-help/some-values-you-need-are-missing-from-in-kccontext
 };
 
-export type KcContextExtensionPerPage = {};
+export type KcContextExtensionPerPage = {
+    "email-code-form.ftl": {
+        codeLength?: number;
+        resendAvailableInSeconds?: number;
+        maxAttemptsReached?: boolean;
+    };
+};
 
 export type KcContext = ExtendKcContext<KcContextExtension, KcContextExtensionPerPage>;

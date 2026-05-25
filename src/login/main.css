@@ -120,3 +120,69 @@ button[type="submit"] {
         padding: 60px 80px 80px;
     }
 }
+
+#kc-otp-login-form #kc-form-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 8px;
+    padding: 0;
+}
+
+#kc-otp-login-form #kc-form-buttons > button {
+    width: 100%;
+    margin: 0;
+    padding: 14px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+}
+
+#kc-otp-login-form #kc-form-buttons > button[name="login"] {
+    background-color: #01a0e2 !important;
+    color: #fff !important;
+    border: 1px solid #01a0e2 !important;
+}
+
+#kc-otp-login-form #kc-form-buttons > button[name="login"]:hover {
+    background-color: #018cc4 !important;
+    border-color: #018cc4 !important;
+}
+
+#kc-otp-login-form #kc-form-buttons > button[name="resend"] {
+    background-color: #fff !important;
+    color: #01a0e2 !important;
+    border: 1px solid #01a0e2 !important;
+}
+
+#kc-otp-login-form #kc-form-buttons > button[name="resend"]:hover:not(:disabled) {
+    background-color: #eaf6fc !important;
+}
+
+#kc-otp-login-form #kc-form-buttons > button[name="cancel"] {
+    background-color: transparent !important;
+    color: #5b6670 !important;
+    border: 1px solid #c7d8e5 !important;
+    font-weight: 500;
+}
+
+#kc-otp-login-form #kc-form-buttons > button[name="cancel"]:hover {
+    background-color: #f4f9fc !important;
+    color: #242321 !important;
+    border-color: #aac3d3 !important;
+}
+
+#kc-otp-login-form #kc-form-buttons > button:disabled {
+    opacity: 0.55;
+    cursor: not-allowed;
+}
+
+#kc-otp-login-form .pf-c-form-control {
+    width: 100%;
+    box-sizing: border-box;
+}
