@@ -19,7 +19,7 @@ html, body {
     display: flex !important;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(130deg, #00D4E3, #00A0E3 50%) !important;
+    background: #0F344E !important;
     font-family: "Outfit", sans-serif;
     color: #242321;
     padding: 24px 0 !important;
@@ -27,6 +27,7 @@ html, body {
 }
 
 #kc-page-title {
+    color: #EFF8FF;
     font-family: "Outfit", sans-serif;
     font-weight: 600;
 }
@@ -34,7 +35,7 @@ html, body {
 .kcLoginClass {
     display: flex;
     flex-direction: column;
-    background: white;
+    background: #051927;
     padding: 40px;
     border-radius: 16px;
     width: 570px;
@@ -48,7 +49,7 @@ button[type="submit"] {
   cursor: pointer;
   outline: none;
   padding: 15px 39px;
-  background-color: #01a0e2 !important;
+  background-color: #1386D8 !important;
   border-radius: 4px;
   color: #fff;
   text-align: center;
@@ -56,22 +57,22 @@ button[type="submit"] {
   line-height: 16px;
   font-weight: 600;
   font-family: inherit;
-  border: solid #01a0e2 1px;
+  border: solid #1386D8 1px;
   transition: all 0.3s ease;
 }
 
 #kc-header {
-    width: 180px;    
-    min-width: 180px;
-    height: 36px;
-    min-height: 36px;
+    width: 230px;    
+    min-width: 230px;
+    height: 43px;
+    min-height: 43px;
     background-size: 100% auto;
     background-repeat: no-repeat;
     background-position: center center;
     background-image: url("../assets/logo.png");
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 40px;
+    margin-bottom: 16px;
 }
 
 .kcFormCardClass {
@@ -100,10 +101,38 @@ button[type="submit"] {
     margin-bottom: 6px;
     font-size: 16px;
     font-weight: 600;
+    color: #A9BCCA;
+}
+
+#password {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.kcFormPasswordVisibilityButtonClass {
+    background: #0F344E !important;
+    color: #A9BCCA !important;
+}
+
+.kcFormPasswordVisibilityButtonClass::after {
+    content: none !important;
+}
+
+.pf-c-input-group {
+    background: none;
 }
 
 .pf-c-form-control {
-    border: 1px solid #dee8ef;
+    background-color: #C9D4DD;
+    border-radius: 4px !important;
+    font-size: 14px;
+    color: #55626C;
+    padding: 8px 16px;
+    height: 48px !important;
+}
+
+.checkbox span {
+    color: #A9BCCA;
 }
 
 #kc-info {
